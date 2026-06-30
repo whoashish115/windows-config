@@ -1,0 +1,13 @@
+[
+  { "keys": ["ctrl+d"], "command": "duplicate_line" },
+  { "keys": ["alt+up"], "command": "swap_line_up" },
+  { "keys": ["alt+down"], "command": "swap_line_down" },
+   {
+    "keys": ["ctrl+shift+f"],
+    "command": "clang_format",
+    "args": { "entire_file": true },
+    "context": [
+      { "key": "selector", "operator": "equal", "operand": "source.c++" }
+    ]
+  }
+]

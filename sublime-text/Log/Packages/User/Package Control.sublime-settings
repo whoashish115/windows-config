@@ -1,0 +1,17 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Clang Format",
+		"DarkDonut Color Schemes",
+		"Darkula Color Scheme",
+		"Dracula Color Scheme",
+		"Package Control",
+		"Prettierd Format",
+		"Theme - Dark Material",
+		"Theme - Darkmatter",
+	],
+}

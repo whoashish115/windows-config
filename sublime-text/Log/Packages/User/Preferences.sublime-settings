@@ -1,0 +1,11 @@
+{
+	"color_scheme": "Packages/Theme - Darkmatter/Darkmatter.tmTheme",
+	"theme": "Dark-Material.sublime-theme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"font_size": 13,
+    "save_on_focus_lost": true,
+	"index_files": true,
+}

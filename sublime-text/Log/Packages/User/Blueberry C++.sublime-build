@@ -1,0 +1,5 @@
+{
+    "shell_cmd": "g++ -std=c++17 \"$file\" -o \"$file_base_name\" && timeout 4s ./$file_base_name < inputf.in > outputf.in",
+    "selector": "source.c++",
+    "working_dir": "$file_path"
+}

@@ -1,0 +1,92 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.mouseWheelZoom": true,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "explorer.confirmDelete": false,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cheerleader.health.breakReminderEnabled": false,
+    "cheerleader.paste.monitoringEnabled": false,
+    "cheerleader.productivity.monitoringEnabled": false,
+    "cheerleader.encouragement.enabled": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "debug.console.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "chat.editor.fontSize": 16,
+    "chat.fontSize": 16,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Best Themes - Github Black",
+    "explorer.confirmPasteNative": false,
+    "git.openRepositoryInParentFolders": "never",
+    "google-translate.firstLanguage": "en",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "claudeCode.preferredLocation": "panel",
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.mouseWheelScrollSensitivity": 3,
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "postcss": false
+    }
+,
+"material-code.primaryColor": "#626DF1",
+"explorer.confirmDragAndDrop": false,
+"editor.fontFamily": "JetBrainsMono Nerd Font",
+"terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+"code-runner.runInTerminal": true,
+"doki.wallpaper.enabled": false,
+"doki.background.enabled": false,
+"doki.sticker.css": "z-index:10;background-position:100% 99%",
+"typescript.updateImportsOnFileMove.enabled": "always",
+"redhat.telemetry.enabled": false,
+"[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+},
+"[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+},
+"roo-cline.debug": false,
+"roo-cline.allowedCommands": [
+    "git log",
+    "git diff",
+    "git show"
+],
+"roo-cline.deniedCommands": [],
+"markdown.extension.toc.updateOnSave": false,
+"files.associations": {
+    "*.cpp": "cpp"
+},
+"[cpp]": {
+
+    
+    "editor.wordBasedSuggestions": "off",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.stickyScroll.defaultModel": "foldingProviderModel",
+    "editor.suggest.insertMode": "replace"
+},
+"chat.tools.terminal.autoApprove": {
+    "cmake": true
+},
+"python.createEnvironment.trigger": "off",
+"google-translate.secondLanguage": "en",
+"[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
+"C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
+"C_Cpp.default.cppStandard": "c++20",
+"C_Cpp.default.cStandard": "c17",
+"code-runner.executorMap": {
+    "cpp": "cd $dir && g++ -std=c++20 -O2 -Wall $fileName -o $fileNameWithoutExt.exe && .\\$fileNameWithoutExt.exe < input.in > output.out"
+},
+"code-runner.runInTerminal": true
+}

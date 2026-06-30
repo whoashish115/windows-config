@@ -1,0 +1,7 @@
+{
+  
+    "binary": "clang-format.exe",
+    "format_on_save": true,
+    "format_entire_file": true,
+      "style": "Google"
+}

@@ -1,0 +1,17 @@
+// Documentation at https://www.sublimetext.com/docs/themes.html
+{
+    "variables":
+    {
+    },
+
+    "rules":
+    [
+        {
+            "class": "grid_layout_control",
+            "border_size": 1,
+            "border_color": [28, 31, 38],
+            "background_color": [20, 25, 31],
+            "content_margin": 1
+        }
+    ]
+}

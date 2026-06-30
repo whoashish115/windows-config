@@ -1,0 +1,25 @@
+[
+    {
+        "keys": ["ctrl+d"],
+        "command": "duplicate_line"
+    },
+    {
+        "keys": ["alt+up"],
+        "command": "swap_line_up"
+    },
+    {
+        "keys": ["alt+down"],
+        "command": "swap_line_down"
+    },
+     {
+        "keys": ["ctrl+alt+f"],
+        "command": "reindent"
+    },
+    [
+    {
+        "keys": ["ctrl+f"],
+        "command": "reindent"
+    }
+]
+
+]
