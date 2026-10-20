@@ -1,21 +1,81 @@
+
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "Run C++",
-            "type": "shell",
-            "command": "cmd",
-            "args": [
-                "/c",
-                "g++ -std=c++20 -O2 -Wall \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}.exe\" && \"${fileDirname}\\${fileBasenameNoExtension}.exe\" < \"${fileDirname}\\input.in\" > \"${fileDirname}\\output.out\" && del /f /q \"${fileDirname}\\${fileBasenameNoExtension}.exe\""
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": [
-                "$gcc"
-            ]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CP Run",
+      "dependsOn": [
+        "CP Check",
+        "CP Prepare",
+        "CP Compile",
+        "CP Execute"
+      ],
+      "dependsOrder": "sequence",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "CP Check",
+      "type": "shell",
+      "command": "if /I not \"${fileExtname}\"==\".cpp\" (echo ERROR: Open a .cpp file & exit /b 1)",
+      "options": {
+        "cwd": "${fileDirname}",
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
         }
-    ]
+      },
+      "problemMatcher": [],
+      "hide": true
+    },
+    {
+      "label": "CP Prepare",
+      "type": "shell",
+      "command": "if not exist \"inputf.in\" type nul > \"inputf.in\" & type nul > \"outputf.out\" & if exist \"${fileBasenameNoExtension}.exe\" del /q \"${fileBasenameNoExtension}.exe\"",
+      "options": {
+        "cwd": "${fileDirname}",
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      },
+      "problemMatcher": [],
+      "hide": true
+    },
+    {
+      "label": "CP Compile",
+      "type": "process",
+      "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe",
+      "args": [
+        "${file}",
+        "-std=c++23",
+        "-O2",
+        "-Wall",
+        "-o",
+        "${env:TEMP}\\vscode-cp-${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$gcc"],
+      "hide": true
+    },
+    {
+      "label": "CP Execute",
+      "type": "shell",
+      "command": "echo Running... & \"${env:TEMP}\\vscode-cp-${fileBasenameNoExtension}.exe\" < \"inputf.in\" > \"outputf.out\" & del /q \"${env:TEMP}\\vscode-cp-${fileBasenameNoExtension}.exe\"",
+      "options": {
+        "cwd": "${fileDirname}",
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      },
+      "problemMatcher": [],
+      "hide": true
+    }
+  ]
 }
